@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <form id="taxForm">
+            <div class="form-group">
+                <label for="age"><b>Age</b></label>
+                <select id="age" class="form-control" required>
+                    <option value="" disabled selected><b>Select Age</b></option>
+                    <option value="<40">&lt; 40</option>
+                    <option value="≥40 & <60">&ge; 40 &lt; 60</option>
+                    <option value="≥60">&ge; 60</option>
+                </select>
+                <div class="error-icon" id="ageError"></div>
+            </div>
+            <div class="form-group">
+                <label for="income"><b>Income</b></label>
+                <input type="number" id="income" class="form-control"placeholder="Enter gross annual income" required>
+                <div class="error-icon" id="incomeError"></div>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome"><b>Extra Income</b></label>
+                <input type="number" id="extraIncome" class="form-control" placeholder="Enter Extra income"required>
+                <div class="error-icon" id="extraIncomeError"></div>
+            </div>
+            <div class="form-group">
+                <label for="deductions"><b>Deductions</b></label>
+                <input type="number" id="deductions" class="form-control" placeholder="Add total aplicable deductions" required>
+                <div class="error-icon" id="deductionsError"></div>
+            </div>
+            <button class="button button1" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/tax-audit-doodle-vector-debt-concept_53876-126426.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.error-icon {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+.button {
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid blue;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#extraIncome {
+    background-image: url('dollar-icon.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    padding-right: 30px; 
+}
+
+input:invalid {
+    border-color: red;
+}
